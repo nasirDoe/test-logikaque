@@ -43,7 +43,7 @@ const onSearch = (query) => {
 <style scoped>
 .search-modal {
   background-color: rgba(28, 28, 45, 0.9);
-  @apply z-50 fixed top-0 left-0 w-full h-full flex items-center;
+  @apply z-50 fixed top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-lg flex items-center;
 }
 .v-enter-active,
 .v-leave-active {
