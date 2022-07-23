@@ -28,7 +28,7 @@ const show = ref(false);
   }
   &__menu,
   &__search {
-    @apply -top-1;
+    @apply -top-1.5;
   }
   &::before {
     content: '';
@@ -38,7 +38,7 @@ const show = ref(false);
       var(--bg-site-light) 100%
     );
     box-shadow: 0 0 10px 0 rgba(var(--bg-site, 0.75));
-    border-radius: 50%/55px;
+    border-radius: 50%/50px;
     @apply absolute left-1/2 -translate-x-1/2 bottom-0 w-[150%] h-28;
   }
 }
