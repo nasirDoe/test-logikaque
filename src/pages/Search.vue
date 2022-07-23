@@ -36,7 +36,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="flex-1 break-words py-10">
+  <div class="flex-1 py-10 b">
     <p class="text-sm mb-5 text-center text-neutral-600">
       Search result for :
       <strong class="text-site text-lg">{{ route.query.q }}</strong>
