@@ -33,7 +33,7 @@ defineProps({
         alt="Play Icon"
       />
     </div>
-    <div class="ml-3 flex flex-col">
+    <div class="ml-3 w-full flex flex-col">
       <small class="text-xs font-medium mb-1">{{ artist }}</small>
       <h3 class="text-sm font-bold mb-2">{{ title }}</h3>
       <div class="flex w-full mb-0 mt-auto justify-between items-center">
