@@ -22,6 +22,11 @@ const loadSearch = async (limit = 4) => {
   isLoading.value = false;
 };
 
+const loadMore = async () => {
+  const limit = results.value.length - 1 + 4;
+  loadSearch(limit);
+};
+
 watch(route, (newVal, oldVal) => {
   if (newVal.query.q) {
     loadSearch();
@@ -54,7 +59,7 @@ onMounted(() => {
       <div class="w-full text-center">
         <button
           class="bg-gray-100 text-gray-400 px-8 py-2.5 rounded-full text-sm font-medium"
-          @click="loadSearch(results.length + 4)"
+          @click="loadMore"
         >
           {{ isLoading ? 'Loading...' : 'Load More' }}
         </button>
