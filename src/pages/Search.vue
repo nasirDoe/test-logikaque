@@ -11,7 +11,7 @@ const isLoading = ref(false);
 const loadSearch = async (limit = 4) => {
   isLoading.value = true;
   const response = await fetch(
-    `https://itunes.apple.com/search?term=${route.query.q}&limit=${limit}&entity=musicVideo`
+    `https://itunes.apple.com/search?term=${route.query.q}&limit=${limit}`
   );
   const data = await response.json();
   if (data.results.length === 0) {
