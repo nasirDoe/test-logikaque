@@ -36,7 +36,7 @@ defineProps({
     <div class="ml-3 flex flex-col">
       <small class="text-xs font-medium mb-1">{{ artist }}</small>
       <h3 class="text-sm font-bold mb-2">{{ title }}</h3>
-      <div class="flex mb-0 mt-auto justify-between items-center">
+      <div class="flex w-full mb-0 mt-auto justify-between items-center">
         <span
           class="text-xs px-2 py-0.5 bg-[#10b981] text-white rounded-full"
           >{{ genre }}</span
