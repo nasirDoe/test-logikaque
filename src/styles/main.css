@@ -1,0 +1,8 @@
+:root {
+  --bg-site: rgb(113, 43, 218);
+  --bg-site-light: rgb(164, 93, 235);
+  --bg-gradient: linear-gradient(153deg, var(--bg-site), var(--bg-site-light) 100%);
+}
+.bg-gradient {
+  background: var(--bg-gradient);
+}
